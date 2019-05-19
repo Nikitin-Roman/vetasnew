@@ -1,0 +1,428 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  position: relative;
+}
+
+.header__menu-box {
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu-box .header__menu-logo {
+  display: inline-block;
+  margin-right: 31%;
+  margin-top: 29px;
+  position: relative;
+}
+
+.header__menu-box .header__menu-logo:after {
+  content: url("../../images/figure.png");
+  position: absolute;
+  top: -7px;
+  left: 0px;
+  z-index: 100;
+}
+
+.header__menu-box .header__menu {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.header__menu-box .header__menu-item {
+  display: inline-block;
+}
+
+.header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 30%;
+  left: 0px;
+  bottom: -6px;
+  background-color: red;
+}
+
+.header:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 70%;
+  right: 0px;
+  bottom: -6px;
+  background-color: blue;
+}
+
+.footer .container {
+  position: relative;
+}
+
+.footer__img {
+  width: 100%;
+}
+
+.footer__black-lines {
+  margin-top: -150px;
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer__black-line-left {
+  display: inline-block;
+  width: 20%;
+  background-color: #000;
+  height: 115px;
+}
+
+.footer__black-line-right {
+  display: inline-block;
+  width: 60%;
+  background-color: #000;
+  height: 115px;
+}
+
+.footer__first-row-logo {
+  position: absolute;
+  top: -93px;
+  left: 0px;
+  z-index: 100;
+}
+
+.footer__first-row-logo:after {
+  content: url("../images/footer-figure.png");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.footer__first-row-text {
+  position: absolute;
+  top: -93px;
+  left: 410px;
+  color: #009fe3;
+}
+
+.product-list .product-list-main {
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.product-list .product-list-main__lines {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.product-list .product-list-card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.product-list .product-list-card {
+  background-color: #fff;
+  text-align: center;
+  width: calc(100%/2 - 15px);
+  margin-bottom: 29px;
+}
+
+.product-list .product-list-card__border {
+  border: 10px solid #f0f0f0;
+  height: 541px;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.product-list .product-list-card__img {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: auto;
+}
+
+.product-list .product-list-card:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.product-list .product-list-card__text {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.product-list .product-list-card:nth-child(4n-1) .product-list-card__text,
+.product-list .product-list-card:nth-child(4n-2) .product-list-card__text {
+  background-image: url("../images/productList/background-img1.png");
+}
+
+.product-list .product-list-card:nth-child(4n) .product-list-card__text,
+.product-list .product-list-card:nth-child(4n-3) .product-list-card__text {
+  background-image: url("../images/productList/background-img.png");
+}
+
+.product-list .product-list-card__title {
+  color: #000;
+  font-family: "Futura Demi C";
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1;
+  padding-top: 30px;
+}
+
+.product-list .product-list-card__title h4 {
+  margin: 0px;
+  margin-top: 68px;
+}
+
+.product-list .product-list-card__title:hover {
+  color: #009fe3;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.product-list .product-list-card__subtitle {
+  color: #808080;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product-list .product-list-card__descr {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 39px;
+  padding-right: 48px;
+  margin-bottom: 37px;
+}
+
+.product-list .product-list-card__btn {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1d2026;
+  height: 41px;
+  padding-left: 44px;
+  padding-right: 21px;
+}
+
+.product-list .product-list-card__btn-title {
+  font-family: "Futura Demi C";
+  font-size: 15px;
+  color: #fff;
+}
+
+.product-list .product-list-card__btn-arrow {
+  color: #0685bc;
+}
+
+.product-list .product-list-card__btn:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #009fe3;
+}
+
+.product-list .product-list-card__btn:hover .product-list-card__btn-arrow {
+  color: #fff;
+}
+
+.product-card .product-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.product-card .product-item:after {
+  content: '';
+  position: absolute;
+  bottom: -23px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #009fe3;
+}
+
+.product-card .product-item__first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.product-card .product-item__img {
+  max-width: 100%;
+}
+
+.product-card .product-main {
+  background-color: #f5f5f5;
+  width: 420px;
+  padding: 50px 46px 40px 40px;
+}
+
+.product-card .product-main__title {
+  color: #042c59;
+  font-family: "Futura Demi C";
+  font-size: 30px;
+  margin: 0px;
+}
+
+.product-card .product-main__list {
+  padding: 0px;
+}
+
+.product-card .product-main__list-item {
+  color: #4d4d4d;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.product-card .product-main__list-item span {
+  color: #000;
+}
+
+.product-card .product-main__btn {
+  width: 160px;
+  height: 48px;
+  background-color: #009fe3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "Futura Demi C";
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.product-card .product-main__btn:hover {
+  background-color: #55c4f1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.product-card .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  position: relative;
+}
+
+.product-card .tabs a {
+  color: #040507;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.product-card .tabs a:hover {
+  color: #009fe3;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.product-card .tabs:after {
+  content: '';
+  position: absolute;
+  top: 34px;
+  left: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: #e6e6e6;
+  display: block;
+}
+
+.product-card .tabs li.active a {
+  color: #009fe3;
+}
+
+.product-card .tabs li.active a:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: calc(100% + 20px);
+  position: absolute;
+  top: 34px;
+  left: 0px;
+  z-index: 2;
+  background-color: #009fe3;
+}
+
+.product-card .tab-icon {
+  margin-right: 13px;
+}
+
+.product-card li.t1 {
+  margin-right: 58px;
+}
+
+.product-card li.t2 {
+  margin-right: 46px;
+}
