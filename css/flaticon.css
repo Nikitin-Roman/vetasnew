@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 19/05/2019 19:34
+  	Creation date: 21/05/2019 20:44
   	*/
 
 @font-face {
@@ -35,3 +35,10 @@ margin-left: 20px;
 .flaticon-tag:before { content: "\f102"; }
 .flaticon-black:before { content: "\f103"; }
 .flaticon-chat:before { content: "\f104"; }
+.flaticon-facebook:before { content: "\f105"; }
+.flaticon-instagram:before { content: "\f106"; }
+.flaticon-play:before { content: "\f107"; }
+.flaticon-odnoklassniki:before { content: "\f108"; }
+.flaticon-instagram-1:before { content: "\f109"; }
+.flaticon-check:before { content: "\f10a"; }
+.flaticon-check-1:before { content: "\f10b"; }
